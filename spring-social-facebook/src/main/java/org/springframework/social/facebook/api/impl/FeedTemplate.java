@@ -285,10 +285,11 @@ class FeedTemplate implements FeedOperations {
 	}
 	
 	
-	private static final String[] ALL_POST_FIELDS = {
-			"id", "actions", "admin_creator", "application", "caption", "created_time", "description", "from", "icon",
-			"is_hidden", "is_published", "link", "message", "message_tags", "name", "object_id", "picture", "place", 
-			"privacy", "properties", "source", "status_type", "story", "to", "type", "updated_time", "with_tags", "shares"
+	public static String[] ALL_POST_FIELDS = {
+	    "id", "actions", "created_time", "from", "icon",
+            "is_hidden", "is_published", "message", "message_tags", "picture", "place", 
+            "privacy", "properties", "status_type", "story", "to", "updated_time", "shares",
+            "attachments{media,subattachments,type,title,media_type,url}", "full_picture"
 	};
 
 }
